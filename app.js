@@ -5,10 +5,11 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'views')
 
-app.set(express.static('public'));
+app.set(express.static(__dirname + '/public'));
 
 
 app.use(require('./routes/index'));
+
 app.use(require('./routes/form'));
 app.use(require('./routes/comments'));
 
