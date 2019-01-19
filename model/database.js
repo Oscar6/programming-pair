@@ -17,4 +17,4 @@ const initOptions = {
 
 
 
-module.exports = db
+module.exports = db;
